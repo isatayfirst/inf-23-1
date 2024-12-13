@@ -274,3 +274,101 @@ footer a {
     font-size: 14px;
     color: #bbb;
 }
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .main-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main img {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .students {
+        padding: 20px;
+    }
+
+    .student-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .student-card img {
+        width: 80%;
+        height: auto;
+    }
+
+    .gallery {
+        padding: 20px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-images img {
+        height: 300px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    header nav {
+        gap: 5px;
+    }
+
+    .main h1 {
+        font-size: 32px;
+    }
+
+    .carousel-images img {
+        height: 200px;
+    }
+
+    .student-card {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
